@@ -1,0 +1,17 @@
+apiName: "jjApi"
+
+assets:
+  mappings:
+    /assets: /
+  overrides:
+    /: ../jjsjunk/
+
+server:
+  rootPath: /api/*
+  adminContextPath: /admin
+  applicationConnectors:
+    - type: http
+      port: ${PORT:8007}
+  adminConnectors:
+    - type: http
+      port: 8081
